@@ -3,7 +3,19 @@ package com.easyfrete.model;
 public class Endereco {
 	
 	private String rua;
+	private String cidade;
+	private String estado;
+	private String cep;
 	
+	public Endereco() {}
+	
+	public Endereco(String rua, String cidade, String estado, String cep) {
+		this.rua = rua;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+	}
+
 	public String getRua() {
 		return rua;
 	}
@@ -34,12 +46,5 @@ public class Endereco {
 
 	public void setCep(String cep) {
 		this.cep = cep;
-	}
-
-	private String cidade;
-	
-	private String estado;
-	
-	private String cep;
-
+	}	
 }
