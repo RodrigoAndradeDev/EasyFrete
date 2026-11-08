@@ -1,4 +1,4 @@
-package com.easyfrete.model;
+package com.easyfrete.enums;
 
 public enum StatusEntrega {
 	
