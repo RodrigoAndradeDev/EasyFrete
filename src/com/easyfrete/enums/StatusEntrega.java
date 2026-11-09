@@ -2,8 +2,7 @@ package com.easyfrete.enums;
 
 public enum StatusEntrega {
 	
-	SOLICITADA,
-	EM_COLETA,
+	AGUARDANDO,
 	EM_TRANSITO,
 	ENTREGUE,
 	CANCELADA
