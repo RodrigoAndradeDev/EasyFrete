@@ -7,7 +7,7 @@ public class EntregaHistoricoObserver implements EntregaObserver {
 	@Override
 	public void atualizar(Entrega entrega) {
 		System.out.println(
-				"Histório registrado para a entrega"
+				"Histórico registrado para a entrega"
 		);
 	}
 }

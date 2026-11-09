@@ -8,6 +8,12 @@ public class CalculoFreteProxy implements CalculoFrete {
 	private CalculoFrete calculoReal;
 	
 	public CalculoFreteProxy(CalculoFrete calculoReal) {
+		if (calculoReal == null) {
+	        throw new IllegalArgumentException(
+	            "A estratégia de cálculo é obrigatória."
+	        );
+	    }
+		
 		this.calculoReal = calculoReal;
 	}
 	

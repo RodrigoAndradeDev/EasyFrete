@@ -7,7 +7,7 @@ public class EntregaConsoleObserver implements EntregaObserver {
 	@Override
 	public void atualizar(Entrega entrega) {
 		System.out.println(
-				"Emtrega atualizada: " + entrega.getStatus()
+				"Entrega atualizada: " + entrega.getStatus()
 		);	
 	}
 }

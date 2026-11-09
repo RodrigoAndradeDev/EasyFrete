@@ -8,6 +8,12 @@ public class FreteTerceirizadoAdapter implements CalculoFrete {
 	private ServicoExternoFrete servicoExterno;
 	
 	public FreteTerceirizadoAdapter(ServicoExternoFrete servicoExterno) {
+		if (servicoExterno == null) {
+	        throw new IllegalArgumentException(
+	            "O serviço externo é obrigatório."
+	        );
+	    }
+		
 		this.servicoExterno = servicoExterno;
 	}
 	

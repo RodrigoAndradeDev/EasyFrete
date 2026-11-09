@@ -107,4 +107,19 @@ public class Entrega {
 	public void setTipo(TipoEntrega tipo) {
 		this.tipo = tipo;
 	}
+	
+	@Override
+	public String toString() {
+	    return "Entrega {" +
+	            "\n  ID: " + id +
+	            "\n  Cliente: " + cliente.getNome() +
+	            "\n  Origem: " + origem.getCep() +
+	            "\n  Destino: " + destino.getCep() +
+	            "\n  Peso: " + peso + " kg" +
+	            "\n  Distância: " + distancia + " km" +
+	            "\n  Valor do frete: R$ " + valorFrete +
+	            "\n  Tipo: " + tipo +
+	            "\n  Status: " + status +
+	            "\n}";
+	}
 }
